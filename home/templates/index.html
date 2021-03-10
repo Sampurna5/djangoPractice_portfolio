@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+			<!-- start banner Area -->
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 banner-left">
+							<h6>Hi, I am</h6>
+							<h1>Sampurna Mali</h1>
+							<p>
+								Let me guide you through what I can do for you.
+							</p>
+							<a href="#abc" class="primary-btn text-uppercase">discover now</a>
+						</div>
+						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
+							<img class="img-fluid" src="{% static 'img/hero-img.png' %}" alt="">
+						</div>
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->
+
+			<!-- Start home-about Area -->
+			<section class="home-about-area pt-120">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 home-about-left">
+							<img class="img-fluid" src="{% static 'img/about-img.png' %}" alt="">
+						</div>
+						<div class="col-lg-5 col-md-6 home-about-right">
+							<h6>About Me</h6>
+							<h1 class="text-uppercase">Personal Details</h1>
+							<p>
+								Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+							</p>
+							<a href="#abc" class="primary-btn text-uppercase">View Full Details</a>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End home-about Area -->
+
+			<!-- Start services Area -->
+			<section class="services-area section-gap" id = "abc">
+				<div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content  col-lg-7">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">Things That I Can Do</h1>
+		                        <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+		                    </div>
+		                </div>
+		            </div>						
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-services">
+								<span class="lnr lnr-pie-chart"></span>
+								<a href="#"><h4>Web Design</h4></a>
+								<p>
+									HTML/ CSS/ Bootstrap
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-services">
+								<span class="lnr lnr-laptop-phone"></span>
+								<a href="#"><h4>Web Development</h4></a>
+								<p>
+									Python + Django
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-services">
+								<span class="lnr lnr-camera"></span>
+								<a href="#"><h4>Graphic Design</h4></a>
+								<p>
+									Adobe Illustrator/ Photoshop
+								</p>
+							</div>	
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End services Area -->	
+
+			<!-- Start fact Area -->
+<!--			<section class="facts-area section-gap" id="facts-area">-->
+<!--				<div class="container">-->
+<!--					<div class="row">-->
+<!--						<div class="col-lg-3 col-md-6 single-fact">-->
+<!--							<h1 class="counter">2536</h1>-->
+<!--							<p>Projects Completed</p>-->
+<!--						</div>-->
+<!--						<div class="col-lg-3 col-md-6 single-fact">-->
+<!--							<h1 class="counter">6784</h1>-->
+<!--							<p>Happy Clients</p>-->
+<!--						</div>-->
+<!--						<div class="col-lg-3 col-md-6 single-fact">-->
+<!--							<h1 class="counter">2239</h1>-->
+<!--							<p>Cups of Coffee</p>-->
+<!--						</div>-->
+<!--						<div class="col-lg-3 col-md-6 single-fact">-->
+<!--							<h1 class="counter">435</h1>-->
+<!--							<p>Real Professionals</p>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</section>-->
+			<!-- end fact Area -->	
+
+<!--			&lt;!&ndash; Start portfolio-area Area &ndash;&gt;-->
+<!--            <section class="portfolio-area section-gap" id="portfolio">-->
+<!--                <div class="container">-->
+<!--		            <div class="row d-flex justify-content-center">-->
+<!--		                <div class="menu-content pb-70 col-lg-8">-->
+<!--		                    <div class="title text-center">-->
+<!--		                        <h1 class="mb-10">My Featured Projects</h1>-->
+<!--		                        <p>Projects that I am proud of...</p>-->
+<!--		                    </div>-->
+<!--		                </div>-->
+<!--		            </div>-->
+
+<!--                    <div class="filters">-->
+<!--                        <ul>-->
+<!--                            <li class="active" data-filter="*">All</li>-->
+<!--                            <li data-filter=".graphics">Graphics</li>-->
+<!--                            <li data-filter=".web-dev">Web Development</li>-->
+
+<!--                        </ul>-->
+<!--                    </div>-->
+
+<!--                    <div class="filters-content">-->
+<!--                        <div class="row grid">-->
+<!--                            <div class="single-portfolio col-sm-4 all graphics">-->
+<!--                            	<div class="relative">-->
+<!--	                            	<div class="thumb">-->
+<!--	                            		<div class="overlay overlay-bg"></div>-->
+<!--	                            		 <img class="image img-fluid" src="{% static 'img/chibi-ichigo.jpg' %}" alt="">-->
+<!--	                            	</div>-->
+<!--									<a href="{% static 'img/chibi-ichigo.jpg' %}" class="img-pop-up">-->
+<!--									  <div class="middle">-->
+<!--									    <div class="text align-self-center d-flex"><img src="{% static 'img/preview.png' %}" alt=""></div>-->
+<!--									  </div>-->
+<!--								</a>-->
+<!--                            	</div>-->
+<!--								<div class="p-inner">-->
+<!--								    <h4>Chibi Ichigo</h4>-->
+<!--									<div class="cat">Adobe Illustrator</div>-->
+<!--								</div>-->
+<!--                            </div>-->
+<!--                            <div class="single-portfolio col-sm-4 all web-dev">-->
+<!--                            	<div class="relative">-->
+<!--	                            	<div class="thumb">-->
+<!--										<a href="https://github.com/Sampurna5/worldometerScrapping" target="_blank">-->
+<!--	                            		<div class="overlay overlay-bg"></div>-->
+<!--	                            		 <img class="image img-fluid" src="{% static 'img/python-wallpaper.jpg' %}" alt="">-->
+<!--										</a>-->
+<!--	                            	</div>-->
+<!--									<a href="{% static 'img/python-wallpaper.jpg' %}" class="img-pop-up">-->
+<!--									  <div class="middle">-->
+<!--									    <div class="text align-self-center d-flex"><img src="{% static 'img/preview.png' %}" alt=""></div>-->
+<!--									  </div>-->
+<!--								</a>-->
+<!--                            	</div>-->
+<!--								<div class="p-inner">-->
+<!--								    <h4>Web Scrapping</h4>-->
+<!--									<div class="cat">Python</div>-->
+<!--								</div>-->
+<!--                            </div>-->
+<!--                            <div class="single-portfolio col-sm-4 all web-dev">-->
+<!--                            	<div class="relative">-->
+<!--	                            	<div class="thumb">-->
+<!--	                            		<div class="overlay overlay-bg"></div>-->
+<!--	                            		 <img class="image img-fluid" src="{% static 'img/django-wallpaper.jpg' %}" alt="">-->
+<!--	                            	</div>-->
+<!--									<a href="{% static 'img/django-wallpaper.jpg' %}" class="img-pop-up">-->
+<!--									  <div class="middle">-->
+<!--									    <div class="text align-self-center d-flex"><img src="{% static 'img/preview.png' %}" alt=""></div>-->
+<!--									  </div>-->
+<!--									</a>-->
+
+<!--	                           	</div>-->
+<!--                                <div class="p-inner">-->
+<!--                                    <h4>Coming Soon...</h4>-->
+<!--                                    <div class="cat">Django</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    -->
+<!--                </div>-->
+<!--            </section>-->
+<!--            &lt;!&ndash; End portfolio-area Area &ndash;&gt;-->
+
+			<!-- Start testimonial Area -->
+		    <section class="testimonial-area section-gap">
+		        <div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content pb-70 col-lg-8">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">Testimonials</h1>
+		                        <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="active-testimonial">
+		                    <div class="single-testimonial item d-flex flex-row">
+		                        <div class="thumb">
+		                            <img class="img-fluid" src="{% static 'img/elements/user1.png' %}" alt="">
+		                        </div>
+		                        <div class="desc">
+		                            <p>
+		                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
+		                            </p>
+		                            <h4>Harriet Maxwell</h4>
+		                            <p>CEO at Google</p>
+		                        </div>
+		                    </div>
+		                    <div class="single-testimonial item d-flex flex-row">
+		                        <div class="thumb">
+		                            <img class="img-fluid" src="{% static 'img/elements/user2.png' %}" alt="">
+		                        </div>
+		                        <div class="desc">
+		                            <p>
+		                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
+		                            </p>
+		                            <h4>Carolyn Craig</h4>
+		                            <p>CEO at Facebook</p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		    <!-- End testimonial Area -->
+
+
+{% endblock %}

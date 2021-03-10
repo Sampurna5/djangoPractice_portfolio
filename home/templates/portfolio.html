@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+			<!-- Start portfolio-area Area -->
+            <section class="portfolio-area section-gap" id="portfolio">
+                <div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content pb-70 col-lg-8">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">My Featured Projects</h1>
+		                        <p>Projects that I am proud of...</p>
+		                    </div>
+		                </div>
+		            </div>
+
+                    <div class="filters">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".graphics">Graphics</li>
+                            <li data-filter=".web-dev">Web Development</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <div class="single-portfolio col-sm-4 all graphics">
+                            	<div class="relative">
+	                            	<div class="thumb">
+	                            		<div class="overlay overlay-bg"></div>
+	                            		 <img class="image img-fluid" src="{% static 'img/chibi-ichigo.jpg' %}" alt="">
+	                            	</div>
+									<a href="{% static 'img/chibi-ichigo.jpg' %}" class="img-pop-up">
+									  <div class="middle">
+									    <div class="text align-self-center d-flex"><img src="{% static 'img/preview.png' %}" alt=""></div>
+									  </div>
+								</a>
+                            	</div>
+								<div class="p-inner">
+								    <h4>Chibi Ichigo</h4>
+									<div class="cat">Adobe Illustrator</div>
+								</div>
+                            </div>
+                            <div class="single-portfolio col-sm-4 all web-dev">
+                            	<div class="relative">
+	                            	<div class="thumb">
+										<a href="https://github.com/Sampurna5/worldometerScrapping" target="_blank">
+	                            		<div class="overlay overlay-bg"></div>
+	                            		 <img class="image img-fluid" src="{% static 'img/python-wallpaper.jpg' %}" alt="">
+										</a>
+	                            	</div>
+									<a href="{% static 'img/python-wallpaper.jpg' %}" class="img-pop-up">
+									  <div class="middle">
+									    <div class="text align-self-center d-flex"><img src="{% static 'img/preview.png' %}" alt=""></div>
+									  </div>
+								</a>
+                            	</div>
+								<div class="p-inner">
+								    <h4>Web Scrapping</h4>
+									<div class="cat">Python</div>
+								</div>
+                            </div>
+                            <div class="single-portfolio col-sm-4 all web-dev">
+                            	<div class="relative">
+	                            	<div class="thumb">
+	                            		<div class="overlay overlay-bg"></div>
+	                            		 <img class="image img-fluid" src="{% static 'img/django-wallpaper.jpg' %}" alt="">
+	                            	</div>
+									<a href="{% static 'img/django-wallpaper.jpg' %}" class="img-pop-up">
+									  <div class="middle">
+									    <div class="text align-self-center d-flex"><img src="{% static 'img/preview.png' %}" alt=""></div>
+									  </div>
+									</a>
+
+	                           	</div>
+                                <div class="p-inner">
+                                    <h4>Coming Soon...</h4>
+                                    <div class="cat">Django</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- End portfolio-area Area -->	
+
+{% endblock %}
