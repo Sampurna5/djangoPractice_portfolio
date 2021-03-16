@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.mail import EmailMultiAlternatives
 from .models import *
 
 
@@ -9,7 +10,6 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
-
 
     # def services(request):
     #     return render(request, 'services.html')
@@ -30,7 +30,7 @@ def contact(request):
         subject = request.POST['subject']
         message = request.POST['message']
 
-        data = Contact(
+        data = Contact.objects.create(
             name=name,
             email=email,
             subject=subject,
@@ -38,6 +38,13 @@ def contact(request):
         )
         data.save()
         success_message = {'message': 'Your query was received!!'}
+
+        # sending email
+        html_content = f'<p>This is an <strong>important</strong> message.</p><br>{message}'
+        msg = EmailMultiAlternatives(subject, message, 'msampurna05@gmail.com', ['msampurna05@gmail.com'])
+        msg.attach_alternative(html_content, "text/html")
+        msg.send()
+
         return render(request, 'contact.html', success_message)
 
     return render(request, 'contact.html')
